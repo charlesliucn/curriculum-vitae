@@ -1,5 +1,5 @@
 % [a4paper]
-\usepackage[centering,paperwidth=210mm,paperheight=297mm,body={180mm,247mm}]{geometry}
+\usepackage[centering,paperwidth=210mm,paperheight=297mm,body={165mm,230mm}]{geometry}
 
 \usepackage{
   hyperref,
