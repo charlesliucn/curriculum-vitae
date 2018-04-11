@@ -1,0 +1,75 @@
+\resheading{项目经历}
+  \begin{itemize}[leftmargin=*]
+    \item \ressubsingleline{RNN/LSTM语言模型优化}{Python}{2018.03至今}
+      {\small
+      \begin{itemize}
+        \item 环境配置: Ubuntu, Python, Tensorflow
+        \item 项目简介: 基于现有的循环神经网络(RNN/LSTM等)语言模型，使用不同的word2vec方法，改进词表示(Representation)的效果，降低语言模型的困惑度(Perplexity)；并且，尝试将Attention机制引入神经网络语言模型。
+        \item 个人工作: 复现Skip-Gram、CBOW、Clove等word2vec算法，将训练得到的词向量作为RNN语言模型的输入，比较三种方法对语言模型性能的影响。同时，将NLP中广泛使用的Attention机制引入语言模型。
+      \end{itemize}
+      }
+
+    \item \ressubsingleline{低资源语音识别系统语言模型优化}{Kaldi}{2017.11 -- 2018.03}
+      {\small
+      \begin{itemize}
+        \item 环境配置: Ubuntu, Kaldi, Shell
+        \item 项目简介: 基于美国国家标准与技术研究院(NIST)2016年的OpenKWS评测，使用低资源语种(格鲁吉亚语)进行低资源语音识别系统的优化。使用发音字典生成、词表优化、数据筛选、模型插值融合等方法对语言模型的性能进行改进。
+        \item 个人工作: 对格鲁吉亚语网络数据进行清洗、预处理，统计词频对词表进行扩充，减少开发集上的集外词比例；使用Morfessor工具生成现有词表的发音字典；按照一定原则，从网络数据中筛选出与训练数据类似的文本作为扩充数据，筛选方法包括：困惑度(Perplexity)排序、交叉熵距离排序、TF-IDF文本相似度比较、LSI模型分析、基于doc2vec的文本相似度比较等。经过以上优化，最终在声学模型不变的基础上，低资源语音识别系统的词错误率(WER)有3.9\%的提升。
+      \end{itemize}
+      }
+
+    \item \ressubsingleline{基于上证50指数成分股的金融数据分析}{R}{2017.09 -- 2017.10}
+      {\small
+      \begin{itemize}
+        \item 环境配置: Windows, R
+        \item 项目简介: 使用金融统计课程所学的统计方法，对上证50指数10余年的股价尝试基本的数据分析，从中得出一些具有参考价值的结论。
+        \item 个人工作: 基于上证50指数的数据，分别使用线性时间序列、资产波动率模型、因子模型进行初步分析，并且进行了投资组合分析与优化，用资本资产定价模型(CAPM)刻画了金融市场中的均衡问题。
+      \end{itemize}
+      }
+
+    \item \ressubsingleline{基于深度学习的移动大数据挖掘及用户行为建模}{Python}{2017.03 -- 2017.07}
+      {\small
+      \begin{itemize}
+        \item 环境配置: Ubuntu, Python, Tensorflow
+        \item 项目简介: 运用传统马尔科夫链方法和深度学习方法(RNN等)，对从时间和空间两个维度对用户的移动数据进行建模分析及预测，从而根据用户现有的轨迹数据对未来某一时刻的位置进行预测。
+        \item 个人工作: 设计实现基于马尔科夫的轨迹预测算法，并基于Tensorflow框架尝试对论文的深度学习算法进行复现与评估。 
+      \end{itemize}
+      }
+      
+    \item \ressubsingleline{中文连续语音识别}{Python}{2017.03 -- 2017.05}
+    {\small
+    \begin{itemize}
+      \item 环境配置: Ubuntu，Kaldi，PyQt
+      \item 项目简介: 基于Ubuntu平台，安装编译Kaldi环境，分别基于timit(英文)和thchs30(中文)数据集训练得到语音识别模型，并且基于训练得到的模型实现实时语音识别。
+      \item 个人工作: 基于thchs30中文数据集，使用Kaldi工具包训练得到语音识别系统；并且使用PyQt设计了图形用户界面，实现用户点击按键后实时进行语音识别的交互式程序。
+    \end{itemize}
+    }
+    
+    \item \ressubsingleline{旧金山湾区公共自行车数据分析与可视化}{R}{2017.01 -- 2017.02}
+	  {\small
+	  \begin{itemize}
+	    \item 环境配置: Windows, R, R Shiny App
+	    \item 项目简介: 使用旧金山湾区2014至2016年间公共自行车的使用数据，进行可视化分析，并使用基本统计方法发现内在规律。
+	    \item 个人工作: 从空间和时间两个角度，使用基础的机器学习方法(线性回归、LASOO回归等)分析天气等因素对公共自行车使用情况的影响，并基于分析结果，对公共自行车的分配提出了可行的建议，实现了一款Shiny App，向公共自行车使用者提供了路线查询等功能。
+	  \end{itemize}
+	  }
+
+    \item \ressubsingleline{MIPS处理器设计与实现}{Verilog}{2016.06  -- 2016.07}
+    {\small
+    \begin{itemize}
+      \item 环境配置: Windows，Vivado，Modelsim，Basys 3.0开发板
+      \item 项目简介: 组建3人小组，使用Verilog编程实现32位MIPS处理器，并实现定时器和UART外设的相关功能。
+      \item 个人工作: 基于单周期的模块化原理，独立实现了各单元模块的设计和调试，将各模块综合并加入外设功能，基于Basys 3.0 FPGA开发板实现了单周期处理器，提高了个人硬件设计调试以及团队合作的能力。
+    \end{itemize}
+    }
+    \item
+    \ressubsingleline{烟草图像杂质识别}{MATLAB}{2016.03 -- 2016.04}
+    {\small
+    \begin{itemize}
+      \item 环境配置: Windows，MATLAB
+      \item 项目简介: 使用统计信号的处理方法，对烟草图像中的杂质进行识别和剔除。
+      \item 个人工作: 基于烟草和杂质RGB和HSV的分布进行高斯拟合，利用训练数据得到分离效果较好的阈值，在测试数据上，杂质的召回率达到90\%以上。
+    \end{itemize}
+    }
+
+  \end{itemize}
